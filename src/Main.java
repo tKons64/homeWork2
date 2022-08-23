@@ -39,5 +39,24 @@ public class Main {
         float differenceWeightBoxer = weightBoxer1 - weightBoxer2;
         System.out.println("Разница в весе боксеров " + Math.abs(differenceWeightBoxer) + " кг!");
 
+// Задание №3
+        short weghtBanana = 80;
+        short volumeMilk = 200;
+        short weghtIcecream = 100;
+        short egg = 70;
+
+        // переведем молоко в вес
+        double weghtMilk = volumeMilk * 1.05;
+
+        System.out.println(" ");
+        System.out.println("Задание №3:");
+        //считаем общий вес завтрака
+        // пришлось приоброзовать резульат в тип short, иначе выдает ошибку и просит указать тип int.
+        // Не понимаю почему(
+        short weightBreakfastGrams = (short) ((weghtBanana * 5) + (short)weghtMilk + (weghtIcecream * 2) + (egg * 4));
+        System.out.println("Общий вес завтрака в граммах - " + weightBreakfastGrams);
+
+        float weightBreakfastKilograms = (float)weightBreakfastGrams / 1000;
+        System.out.println("Общий вес завтрака в килограммах - " + weightBreakfastKilograms);
     }
 }

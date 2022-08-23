@@ -103,7 +103,7 @@ public class Main {
         int nowSalaryYearDenis = (int)nowSalaryMonthDenis * 12;
         int nowSalaryYearKristina = (int)nowSalaryMonthKristina * 12;
 
-        // расчитываем разницу в годовом доходе
+        // иницииализируем переменные и расчитываем разницу в годовом доходе
         int distinctionSalaryYearMaria    = nowSalaryYearMaria - pastSalaryYearMaria;
         int distinctionSalaryYearDenis    = nowSalaryYearDenis - pastSalaryYearDenis;
         int distinctionSalaryYearKristina = nowSalaryYearKristina - pastSalaryYearKristina;

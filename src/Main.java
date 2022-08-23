@@ -69,7 +69,7 @@ public class Main {
 
         int daysMax = weightLostGr / gramsMin;
         int daysMin = weightLostGr / gramsMax;
-        float daysAverageFull = weightLostGr / gramsAverage;
+        int daysAverageFull = weightLostGr / gramsAverage;
         float hoursRemainder = ((weightLostGr / (float)gramsAverage) % daysAverageFull) * 24;
 
         System.out.println(" ");
@@ -79,6 +79,41 @@ public class Main {
         System.out.println("Минимальное время похудения Боксера №1 (по 500 гр. в день) - " + daysMin + " дней");
         System.out.println("Среднее время похудения Боксера №1 (по " + gramsAverage + " гр. в день) - " + (byte)daysAverageFull + " дней, " + (byte)(hoursRemainder + 0.5) + " часов");
 
+// Задание №5
+
+        // иницииализируем переменные для текущей месячной зарплаты сотрудников
+        int pastSalaryMonthMaria = 67_760;
+        int pastSalaryMonthDenis = 83_690;
+        int pastSalaryMonthKristina = 76_230;
+
+        // иницииализируем переменные и рассчитаем текущий годовой доход сотрудников
+        int pastSalaryYearMaria = pastSalaryMonthMaria * 12;
+        int pastSalaryYearDenis = pastSalaryMonthDenis * 12;
+        int pastSalaryYearKristina = pastSalaryMonthKristina * 12;
+
+        float indexPercent = 0.1f;
+
+        // иницииализируем переменные и рассчитаем новый размер месячной зарплаты сотрудников
+        float nowSalaryMonthMaria = pastSalaryMonthMaria * indexPercent + pastSalaryMonthMaria;
+        float nowSalaryMonthDenis = pastSalaryMonthDenis * indexPercent + pastSalaryMonthDenis;
+        float nowSalaryMonthKristina = pastSalaryMonthKristina * indexPercent + pastSalaryMonthKristina;
+
+        // иницииализируем переменные и рассчитаем новый годовой доход сотрудников
+        int nowSalaryYearMaria = (int)nowSalaryMonthMaria * 12;
+        int nowSalaryYearDenis = (int)nowSalaryMonthDenis * 12;
+        int nowSalaryYearKristina = (int)nowSalaryMonthKristina * 12;
+
+        // расчитываем разницу в годовом доходе
+        int distinctionSalaryYearMaria    = nowSalaryYearMaria - pastSalaryYearMaria;
+        int distinctionSalaryYearDenis    = nowSalaryYearDenis - pastSalaryYearDenis;
+        int distinctionSalaryYearKristina = nowSalaryYearKristina - pastSalaryYearKristina;
+
+        System.out.println(" ");
+        System.out.println("Задание №5:");
+
+        System.out.println("Маша теперь получает - " + (int)nowSalaryMonthMaria + " рублей. Годовой доход вырос на - " + distinctionSalaryYearMaria + " рублей");
+        System.out.println("Денис теперь получает - " + (int)nowSalaryMonthDenis + " рублей. Годовой доход вырос на - " + distinctionSalaryYearDenis + " рублей");
+        System.out.println("Кристина теперь получает - " + (int)nowSalaryMonthKristina + " рублей. Годовой доход вырос на - " + distinctionSalaryYearKristina + " рублей");
 
 
     }

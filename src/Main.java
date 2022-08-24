@@ -117,39 +117,64 @@ public class Main {
 
 // 2-й вариант домашнего задания по ссылке - https://skyengpublic.notion.site/1-73749ae77bf04274b387711fdcae558d
 // Задание №2.1
+        System.out.println(" ");
+        System.out.println("Задание №2.1:");
+
         var dog = 8;
         var cat = 3.6;
         var paper = 763_789;
-
-        System.out.println(" ");
-        System.out.println("Задание №2.1:");
 
         System.out.println(dog);
         System.out.println(cat);
         System.out.println(paper);
 
 // Задание №2.2
+        System.out.println(" ");
+        System.out.println("Задание №2.2:");
+
         dog = dog + 4;
         cat += 4; // попробуем другой способ)
         paper += 4;
-
-        System.out.println(" ");
-        System.out.println("Задание №2.2:");
 
         System.out.println(dog);
         System.out.println(cat);
         System.out.println(paper);
 
 // Задание №2.3
+        System.out.println(" ");
+        System.out.println("Задание №2.3:");
+
         var dogTypeDouble = dog - 3.5;
         cat -= 1.6; // попробуем другой способ)
         paper -= 7_639;
 
-        System.out.println(" ");
-        System.out.println("Задание №2.3:");
-
         System.out.println(dogTypeDouble);
         System.out.println(cat);
         System.out.println(paper);
+
+// Задание №2.4
+        System.out.println(" ");
+        System.out.println("Задание №2.4:");
+
+        var friend = 19;
+        System.out.println(friend);
+        friend += 2;
+        System.out.println(friend);
+        friend /=7;
+        System.out.println(friend);
+
+// Задание №2.5
+        System.out.println(" ");
+        System.out.println("Задание №2.5:");
+
+        var frog = 3.5;
+        System.out.println(frog);
+        frog = frog * 10;
+        System.out.println(frog);
+        frog = frog / 3.5;
+        System.out.println(frog);
+        frog = frog + 4;
+        System.out.println(frog);
+
     }
 }

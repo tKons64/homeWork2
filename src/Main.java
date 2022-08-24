@@ -176,5 +176,46 @@ public class Main {
         frog = frog + 4;
         System.out.println(frog);
 
+// Задание №2.6
+        System.out.println(" ");
+        System.out.println("Задание №2.6:");
+
+        var weightBoxer21 = 78.2;
+        var weightBoxer22 = 82.7;
+
+        var totalWeightBoxer2 = weightBoxer21 + weightBoxer22;
+        System.out.println("Общий вес боксеров " + totalWeightBoxer2 + " кг!");
+
+        // мы можем не знать изначально чей вес больше,
+        // поэтому для универсальности будем вычитать первый вес из второго
+        // и потом результат приводить к модулю числа
+        var differenceWeightBoxer2 = weightBoxer21 - weightBoxer22;
+        System.out.println("Разница в весе боксеров " + Math.abs(differenceWeightBoxer2) + " кг!");
+
+// Задание №2.7
+        System.out.println(" ");
+        System.out.println("Задание №2.7:");
+
+        // прочто вычитаем из большего веса, меньший и обновление зачение переменной totalWeightBoxer2
+        differenceWeightBoxer2 = weightBoxer22 - weightBoxer21;
+        System.out.println("Способ 1. Разница в весе боксеров " + Math.abs(differenceWeightBoxer2) + " кг!");
+
+        // используем спосб через остаток от деления %
+        differenceWeightBoxer2 = weightBoxer22 % weightBoxer21;
+        System.out.println("Способ 2. Разница в весе боксеров " + Math.abs(differenceWeightBoxer2) + " кг!");
+
+// Задание №2.8
+        System.out.println(" ");
+        System.out.println("Задание №2.8:");
+
+        var totalWorkTime = 640;
+        var workTimeInDay = 8;
+        var totalEmployees = totalWorkTime / workTimeInDay;
+        System.out.println("Всего работников в компании – " + totalEmployees + " человек.");
+
+        //Посчитайте сколько часов работы должно быть поделено между сотрудниками, если в компании работает на 94 человека больше.
+        var newNumberEmployees = totalEmployees + 94;
+        var newTotalWorkTime = newNumberEmployees * workTimeInDay;
+        System.out.println("Если в компании работает - " + newNumberEmployees + " человек, то всего - " + newTotalWorkTime + " часов работы может быть поделено между сотрудниками");
     }
 }

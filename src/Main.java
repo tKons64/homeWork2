@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-
-// Задание №1
+// Первый вариант домашнего задания по ссылке - https://skyengpublic.notion.site/1-2-fa644f7f20be4093911382030d47bcb4
+// Задание №1.1
         byte a = 100;
         short b = 2000;
         int c = 3000;
@@ -13,7 +13,7 @@ public class Main {
         char C = '!';
         boolean YesNo = true;
 
-        System.out.println("Задание №1:");
+        System.out.println("Задание №1.1:");
         System.out.println(a);
         System.out.println(b);
         System.out.println(c);
@@ -23,12 +23,12 @@ public class Main {
         System.out.println(C);
         System.out.println(YesNo);
 
-// Задание №2
+// Задание №1.2
         float weightBoxer1 = 78.2f;
         float weightBoxer2 = 82.7f;
 
         System.out.println(" ");
-        System.out.println("Задание №2:");
+        System.out.println("Задание №1.2:");
 
         float totalWeightBoxer = weightBoxer1 + weightBoxer2;
         System.out.println("Общий вес боксеров " + totalWeightBoxer + " кг!");
@@ -39,7 +39,7 @@ public class Main {
         float differenceWeightBoxer = weightBoxer1 - weightBoxer2;
         System.out.println("Разница в весе боксеров " + Math.abs(differenceWeightBoxer) + " кг!");
 
-// Задание №3
+// Задание №1.3
         short weghtBanana = 80;
         short volumeMilk = 200;
         short weghtIcecream = 100;
@@ -49,7 +49,7 @@ public class Main {
         double weghtMilk = volumeMilk * 1.05;
 
         System.out.println(" ");
-        System.out.println("Задание №3:");
+        System.out.println("Задание №1.3:");
         //считаем общий вес завтрака
         // пришлось приоброзовать резульат в тип short, иначе выдает ошибку и просит указать тип int.
         // Не понимаю почему(
@@ -59,7 +59,7 @@ public class Main {
         float weightBreakfastKilograms = (float)weightBreakfastGrams / 1000;
         System.out.println("Общий вес завтрака в килограммах - " + weightBreakfastKilograms);
 
-// Задание №4
+// Задание №1.4
 
         byte weightLostKg = 7; // вес в килограммах
         int weightLostGr = weightLostKg * 1000; // вес в граммах
@@ -73,13 +73,13 @@ public class Main {
         float hoursRemainder = ((weightLostGr / (float)gramsAverage) % daysAverageFull) * 24;
 
         System.out.println(" ");
-        System.out.println("Задание №4:");
+        System.out.println("Задание №1.4:");
 
         System.out.println("Максимальное время похудения Боксера №1 (по 250 гр. в день) - " + daysMax + " дней");
         System.out.println("Минимальное время похудения Боксера №1 (по 500 гр. в день) - " + daysMin + " дней");
         System.out.println("Среднее время похудения Боксера №1 (по " + gramsAverage + " гр. в день) - " + (byte)daysAverageFull + " дней, " + (byte)(hoursRemainder + 0.5) + " часов");
 
-// Задание №5
+// Задание №1.5
 
         // иницииализируем переменные для текущей месячной зарплаты сотрудников
         int pastSalaryMonthMaria = 67_760;
@@ -109,12 +109,47 @@ public class Main {
         int distinctionSalaryYearKristina = nowSalaryYearKristina - pastSalaryYearKristina;
 
         System.out.println(" ");
-        System.out.println("Задание №5:");
+        System.out.println("Задание №1.5:");
 
         System.out.println("Маша теперь получает - " + (int)nowSalaryMonthMaria + " рублей. Годовой доход вырос на - " + distinctionSalaryYearMaria + " рублей");
         System.out.println("Денис теперь получает - " + (int)nowSalaryMonthDenis + " рублей. Годовой доход вырос на - " + distinctionSalaryYearDenis + " рублей");
         System.out.println("Кристина теперь получает - " + (int)nowSalaryMonthKristina + " рублей. Годовой доход вырос на - " + distinctionSalaryYearKristina + " рублей");
 
+// 2-й вариант домашнего задания по ссылке - https://skyengpublic.notion.site/1-73749ae77bf04274b387711fdcae558d
+// Задание №2.1
+        var dog = 8;
+        var cat = 3.6;
+        var paper = 763_789;
 
+        System.out.println(" ");
+        System.out.println("Задание №2.1:");
+
+        System.out.println(dog);
+        System.out.println(cat);
+        System.out.println(paper);
+
+// Задание №2.2
+        dog = dog + 4;
+        cat += 4; // попробуем другой способ)
+        paper += 4;
+
+        System.out.println(" ");
+        System.out.println("Задание №2.2:");
+
+        System.out.println(dog);
+        System.out.println(cat);
+        System.out.println(paper);
+
+// Задание №2.3
+        var dogTypeDouble = dog - 3.5;
+        cat -= 1.6; // попробуем другой способ)
+        paper -= 7_639;
+
+        System.out.println(" ");
+        System.out.println("Задание №2.3:");
+
+        System.out.println(dogTypeDouble);
+        System.out.println(cat);
+        System.out.println(paper);
     }
 }
